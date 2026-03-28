@@ -1,0 +1,15 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: netflix-cluster
+  region: eu-west-3
+  version: "1.30"
+
+managedNodeGroups:
+  - name: netflix-nodes
+    instanceType: t3.micro
+    minSize: 2
+    maxSize: 2
+    desiredCapacity: 2
+    volumeSize: 20
