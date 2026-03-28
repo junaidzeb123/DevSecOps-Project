@@ -8,7 +8,7 @@ metadata:
 
 managedNodeGroups:
   - name: netflix-nodes
-    instanceType: t3.micro
+    instanceType: m7i-flex.large
     minSize: 2
     maxSize: 2
     desiredCapacity: 2
